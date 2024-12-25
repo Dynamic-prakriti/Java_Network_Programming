@@ -7,7 +7,7 @@ public class UDPClient {
         byte buf[] = new byte[256];
 
         InetAddress address = InetAddress.getByName("localhost");
-        DatagramPacket Packet = new DatagramPacket(buf,buf.length,address,9999);
+        DatagramPacket Packet = new DatagramPacket(buf,buf.length,address,[port]);
 
         socket.send(Packet);
 
